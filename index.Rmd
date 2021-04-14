@@ -73,12 +73,6 @@ You can embed a gif.
 
 ![pugs](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
 
-You can embed a Shiny app using the `iframe` tag in html code, or with the `include_app()` function from the `knitr` package.
-
-```{r}
-knitr::include_app("https://nsgrantham.shinyapps.io/tidytuesdayrocks/?_ga=2.182513062.120953359.1618397269-719807500.1603791876")
-```
-
 # You can even create tabs if you want! {.tabset .tabset-fade .tabset-pills}
 
 ## Bulleted list
