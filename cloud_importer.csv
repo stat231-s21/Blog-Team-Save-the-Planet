@@ -1,0 +1,213 @@
+country,country_new,importer
+United States of America,UnitedStatesofAmerica,9722
+Japan,Japan,5192
+Germany,Germany,4913
+France,France,2604
+Hong Kong,HongKong,2555
+Switzerland,Switzerland,2508
+China,China,2126
+Singapore,Singapore,1576
+United Arab Emirates,UnitedArabEmirates,1506
+Canada,Canada,1409
+"Korea, Republic of",KoreaRepublicof,1324
+United Kingdom of Great Britain and Northern Ireland,UnitedKingdomofGreatBritainandNorthernIreland,1259
+Italy,Italy,1220
+"Taiwan, Province of China",TaiwanProvinceofChina,1180
+Turkey,Turkey,1000
+Norway,Norway,949
+Russian Federation,RussianFederation,940
+Thailand,Thailand,898
+Qatar,Qatar,813
+Netherlands,Netherlands,757
+Spain,Spain,749
+Kuwait,Kuwait,732
+Malaysia,Malaysia,719
+Mexico,Mexico,668
+Australia,Australia,599
+South Africa,SouthAfrica,587
+New Zealand,NewZealand,562
+Ukraine,Ukraine,525
+Austria,Austria,519
+Denmark,Denmark,486
+Saudi Arabia,SaudiArabia,464
+Belgium,Belgium,459
+Brazil,Brazil,418
+Czechia,Czechia,418
+Philippines,Philippines,413
+Lebanon,Lebanon,412
+Kazakhstan,Kazakhstan,398
+Israel,Israel,396
+Bahrain,Bahrain,392
+India,India,383
+Indonesia,Indonesia,377
+Oman,Oman,360
+Chile,Chile,332
+Argentina,Argentina,327
+Belarus,Belarus,310
+Macao,Macao,275
+Viet Nam,VietNam,275
+Pakistan,Pakistan,274
+Iran (Islamic Republic of),IranIslamicRepublicof,266
+Poland,Poland,262
+Jordan,Jordan,230
+Sweden,Sweden,226
+Morocco,Morocco,209
+Iraq,Iraq,205
+Monaco,Monaco,204
+Guatemala,Guatemala,201
+Azerbaijan,Azerbaijan,186
+Georgia,Georgia,175
+Uzbekistan,Uzbekistan,171
+"Moldova, Republic of",MoldovaRepublicof,169
+Egypt,Egypt,156
+Serbia,Serbia,156
+Bangladesh,Bangladesh,155
+Portugal,Portugal,153
+Greece,Greece,150
+Bosnia and Herzegovina,BosniaandHerzegovina,149
+Réunion,Réunion,148
+North Macedonia,NorthMacedonia,144
+Hungary,Hungary,131
+Peru,Peru,131
+Barbados,Barbados,128
+Guadeloupe,Guadeloupe,128
+Panama,Panama,127
+Costa Rica,CostaRica,125
+San Marino,SanMarino,125
+Dominican Republic,DominicanRepublic,120
+Maldives,Maldives,114
+Martinique,Martinique,114
+Korea (Democratic People's Republic of),KoreaDemocraticPeoplesRepublicof,113
+Armenia,Armenia,112
+Curaçao,Curaçao,109
+Aruba,Aruba,106
+Tunisia,Tunisia,106
+Colombia,Colombia,102
+Montenegro,Montenegro,100
+Bulgaria,Bulgaria,99
+Suriname,Suriname,99
+Albania,Albania,98
+Mauritius,Mauritius,98
+Madagascar,Madagascar,97
+Afghanistan,Afghanistan,94
+Ireland,Ireland,94
+Senegal,Senegal,94
+Cyprus,Cyprus,92
+Romania,Romania,92
+Nigeria,Nigeria,88
+Brunei Darussalam,BruneiDarussalam,84
+Sint Maarten (Dutch part),SintMaartenDutchpart,79
+Algeria,Algeria,74
+Zimbabwe,Zimbabwe,74
+Turkmenistan,Turkmenistan,73
+Kyrgyzstan,Kyrgyzstan,72
+Saint Barthélemy,SaintBarthélemy,72
+Namibia,Namibia,71
+Slovakia,Slovakia,70
+Nepal,Nepal,69
+Trinidad and Tobago,TrinidadandTobago,67
+Angola,Angola,62
+Bahamas,Bahamas,60
+French Guiana,FrenchGuiana,60
+Finland,Finland,59
+Ghana,Ghana,53
+Côte d'Ivoire,CôtedIvoire,52
+Cambodia,Cambodia,49
+Lithuania,Lithuania,49
+Kenya,Kenya,48
+Gibraltar,Gibraltar,45
+Andorra,Andorra,44
+Uruguay,Uruguay,43
+"Bonaire, Sint Eustatius and Saba",BonaireSintEustatiusandSaba,42
+Cayman Islands,CaymanIslands,35
+Iceland,Iceland,33
+Lao People's Democratic Republic,LaoPeoplesDemocraticRepublic,32
+Latvia,Latvia,32
+El Salvador,ElSalvador,31
+Venezuela (Bolivarian Republic of),VenezuelaBolivarianRepublicof,31
+Jersey,Jersey,29
+Luxembourg,Luxembourg,29
+Myanmar,Myanmar,29
+Paraguay,Paraguay,29
+French Polynesia,FrenchPolynesia,26
+Mongolia,Mongolia,26
+Slovenia,Slovenia,26
+Sri Lanka,SriLanka,26
+Tajikistan,Tajikistan,26
+Faroe Islands,FaroeIslands,25
+Libya,Libya,25
+"Congo, Democratic Republic of the",CongoDemocraticRepublicofthe,24
+Ecuador,Ecuador,24
+Estonia,Estonia,23
+Guam,Guam,23
+Uganda,Uganda,22
+Congo,Congo,19
+Saint Martin (French part),SaintMartinFrenchpart,19
+Guernsey,Guernsey,18
+New Caledonia,NewCaledonia,17
+Bermuda,Bermuda,16
+Antigua and Barbuda,AntiguaandBarbuda,15
+Virgin Islands (British),VirginIslandsBritish,15
+Saint Kitts and Nevis,SaintKittsandNevis,14
+Sudan,Sudan,14
+"Tanzania, United Republic of",TanzaniaUnitedRepublicof,14
+Nicaragua,Nicaragua,13
+Cameroon,Cameroon,12
+Croatia,Croatia,12
+Mozambique,Mozambique,12
+Ethiopia,Ethiopia,11
+Honduras,Honduras,11
+Fiji,Fiji,10
+Gabon,Gabon,10
+Greenland,Greenland,10
+Liechtenstein,Liechtenstein,10
+Puerto Rico,PuertoRico,10
+Cuba,Cuba,9
+Jamaica,Jamaica,9
+Malawi,Malawi,9
+Eswatini,Eswatini,8
+Northern Mariana Islands,NorthernMarianaIslands,8
+Zambia,Zambia,8
+Cabo Verde,CaboVerde,7
+Saint Lucia,SaintLucia,7
+Holy See,HolySee,6
+Isle of Man,IsleofMan,6
+Malta,Malta,6
+Palau,Palau,6
+Seychelles,Seychelles,6
+Haiti,Haiti,5
+Mauritania,Mauritania,5
+Togo,Togo,5
+Benin,Benin,4
+Bolivia (Plurinational State of),BoliviaPlurinationalStateof,4
+Botswana,Botswana,4
+Cocos (Keeling) Islands,CocosKeelingIslands,4
+Grenada,Grenada,4
+Niger,Niger,4
+Syrian Arab Republic,SyrianArabRepublic,4
+Belize,Belize,3
+Eritrea,Eritrea,3
+Mali,Mali,3
+Papua New Guinea,PapuaNewGuinea,3
+Rwanda,Rwanda,3
+Yemen,Yemen,3
+Chad,Chad,2
+Djibouti,Djibouti,2
+Equatorial Guinea,EquatorialGuinea,2
+French Southern Territories,FrenchSouthernTerritories,2
+Guinea,Guinea,2
+Guyana,Guyana,2
+Liberia,Liberia,2
+Mayotte,Mayotte,2
+Saint Vincent and the Grenadines,SaintVincentandtheGrenadines,2
+Timor-Leste,TimorLeste,2
+Tokelau,Tokelau,2
+Virgin Islands (U.S.),VirginIslandsUS,2
+Anguilla,Anguilla,1
+Burkina Faso,BurkinaFaso,1
+Central African Republic,CentralAfricanRepublic,1
+Dominica,Dominica,1
+Gambia,Gambia,1
+Kiribati,Kiribati,1
+Samoa,Samoa,1
+Turks and Caicos Islands,TurksandCaicosIslands,1
