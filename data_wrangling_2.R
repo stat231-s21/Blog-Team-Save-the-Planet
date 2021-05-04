@@ -27,7 +27,7 @@ library(tidyr)
 #Read in csv's
 cities <- read_csv("city_totals.csv")
 conservation <- read_csv("conservation_funding.csv")
-
+data <- read.csv("./trade.csv")
 
 ###### CITY BIODIVERSITY ######
 city_names <- c("Boston", "Chicago", "Detroit", "District of Columbia", 
@@ -35,7 +35,6 @@ city_names <- c("Boston", "Chicago", "Detroit", "District of Columbia",
 cities_final <- cities %>%
   pivot_longer(city_names, names_to = "City", values_to = "Species") %>%
   pivot_wider(names_from = "Type", values_from = "Species")
-
 
 ###### CONSERVATION FUNDING ######
 cons_selected <- conservation %>%
@@ -46,3 +45,23 @@ cons_selected <- conservation %>%
   filter(is.na(total_domestic_funding) == FALSE) %>%
   mutate(total = total_aid_funding + total_domestic_funding
          + trust_funds_and_debt_swaps + other)
+
+####### Count of Species exported by each country #########
+exp_country <- data %>%
+               select(exporter_country, exporter) %>%
+               group_by(exporter, exporter_country) %>%
+               summarize(exported_qty = n(), .groups = 'drop') %>%
+               filter(!(is.na(exporter_country) | exporter_country == "")) %>%
+               filter(str_detect(exporter_country, "[a-z]")) 
+
+######## Species traded between countries ############
+trade_coun <- data %>%
+              select(importer_country, exporter_country) %>%
+              group_by(importer_country, exporter_country) %>%
+              summarize(trade_occurrence = n(), .groups = 'drop') %>%
+              filter(!(is.na(importer_country) | importer_country == "") &
+                     !(is.na(exporter_country) | exporter_country == "") ) %>%
+              filter(trade_occurrence >= 200) %>%
+              arrange(desc(trade_occurrence))
+
+        
