@@ -28,6 +28,8 @@ library(tidyr)
 cities <- read_csv("city_totals.csv")
 conservation <- read_csv("conservation_funding.csv")
 data <- read.csv("./trade.csv")
+threatened_species <- read.csv("threatened.csv")
+red_list_cats <- read_csv("iucn_categories.csv")
 
 ###### CITY BIODIVERSITY ######
 city_names <- c("Boston", "Chicago", "Detroit", "District of Columbia", 
@@ -64,4 +66,14 @@ trade_coun <- data %>%
               filter(trade_occurrence >= 200) %>%
               arrange(desc(trade_occurrence))
 
-        
+##### THREATENED SPECIES AND COUNTRY #####
+threatened_country <- threatened_species %>%
+  select(Class, Red_list_category, Country, Latitude, Longitude) %>%
+  filter(!(Red_list_category %in% c("DD", "NE"))) %>%
+  group_by(Red_list_category, Country, Latitude, Longitude) %>%
+  summarise(num_species = n())
+
+# joining the names of red list categories
+threatened_iucn <- threatened_country %>%
+  left_join(red_list_cats, by = "Red_list_category") %>%
+  drop_na()        
