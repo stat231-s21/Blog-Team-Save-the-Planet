@@ -68,12 +68,25 @@ trade_coun <- data %>%
 
 ##### THREATENED SPECIES AND COUNTRY #####
 threatened_country <- threatened_species %>%
-  select(Class, Red_list_category, Country, Latitude, Longitude) %>%
+  select(Class, Red_list_category, Country) %>%
   filter(!(Red_list_category %in% c("DD", "NE"))) %>%
-  group_by(Red_list_category, Country, Latitude, Longitude) %>%
+  group_by(Red_list_category, Country) %>%
   summarise(num_species = n())
 
 # joining the names of red list categories
 threatened_iucn <- threatened_country %>%
   left_join(red_list_cats, by = "Red_list_category") %>%
-  drop_na()        
+  drop_na()
+
+# join with world map
+world_map <- map_data(map = "world"
+                      , region = ".")
+threatened_world <- threatened_iucn %>%
+  full_join(world_map, by = c("Country" = "region")) 
+
+# ggplot(threatened_world, aes(x = long, y = lat, group = group)) +
+#   geom_polygon(fill="lightgray", colour = "white") +
+#   # remove background color and ticks
+#   theme_void()  +
+#   # make aspect ratio fixed
+#   coord_fixed(ratio = 1.3) 
