@@ -59,7 +59,9 @@ cons_selected <- conservation %>%
   mutate(region = case_when(region == "United Kingdom" ~ "UK", 
                             TRUE ~ as.character(region))) %>%
   mutate(region = case_when(region == "Congo" ~ "Republic of Congo", 
-                            TRUE ~ as.character(region)))
+                            TRUE ~ as.character(region))) %>%
+  mutate(log_funding = log(total)) %>%
+  mutate(sqrt_funding = sqrt(total))
 world_map <- map_data(map = "world"
                       , region = ".")
 funding_map <- cons_selected %>%
