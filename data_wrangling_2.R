@@ -37,6 +37,7 @@ city_names <- c("Boston", "Chicago", "Detroit", "District of Columbia",
 cities_final <- cities %>%
   pivot_longer(city_names, names_to = "City", values_to = "Species") %>%
   pivot_wider(names_from = "Type", values_from = "Species")
+write_csv(x = cities_final, file = "./cities_final.csv")
 
 ###### CONSERVATION FUNDING ######
 cons_selected <- conservation %>%
@@ -47,6 +48,7 @@ cons_selected <- conservation %>%
   filter(is.na(total_domestic_funding) == FALSE) %>%
   mutate(total = total_aid_funding + total_domestic_funding
          + trust_funds_and_debt_swaps + other)
+write_csv(x = cons_selected, file = "./conservation_final.csv")
 
 ####### Count of Species exported by each country #########
 exp_country <- data %>%
