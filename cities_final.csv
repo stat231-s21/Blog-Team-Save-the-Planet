@@ -1,9 +1,17 @@
-City,Native,Introduced,Total
-Boston,1284,1031,2315
-Chicago,1190,577,1767
-Detroit,1134,483,1617
-District of Columbia,1556,851,2407
-Minneapolis,1121,279,1400
-New York,1648,880,2528
-Philadelphia,1599,948,2547
-Saint Louis,1313,443,1756
+City,Total,Origin,Species
+Boston,2315,Native,1284
+Boston,2315,Introduced,1031
+Chicago,1767,Native,1190
+Chicago,1767,Introduced,577
+Detroit,1617,Native,1134
+Detroit,1617,Introduced,483
+District of Columbia,2407,Native,1556
+District of Columbia,2407,Introduced,851
+Minneapolis,1400,Native,1121
+Minneapolis,1400,Introduced,279
+New York,2528,Native,1648
+New York,2528,Introduced,880
+Philadelphia,2547,Native,1599
+Philadelphia,2547,Introduced,948
+Saint Louis,1756,Native,1313
+Saint Louis,1756,Introduced,443

@@ -36,7 +36,8 @@ city_names <- c("Boston", "Chicago", "Detroit", "District of Columbia",
                 "Minneapolis", "New York", "Philadelphia", "Saint Louis")
 cities_final <- cities %>%
   pivot_longer(city_names, names_to = "City", values_to = "Species") %>%
-  pivot_wider(names_from = "Type", values_from = "Species")
+  pivot_wider(names_from = "Type", values_from = "Species") %>%
+  pivot_longer(c("Native", "Introduced"), names_to = "Origin", values_to = "Species")
 write_csv(x = cities_final, file = "./cities_final.csv")
 
 ###### CONSERVATION FUNDING ######
@@ -47,8 +48,23 @@ cons_selected <- conservation %>%
   mutate(other = case_when(is.na(other) == TRUE ~ 0, TRUE ~ other)) %>%
   filter(is.na(total_domestic_funding) == FALSE) %>%
   mutate(total = total_aid_funding + total_domestic_funding
-         + trust_funds_and_debt_swaps + other)
-write_csv(x = cons_selected, file = "./conservation_final.csv")
+         + trust_funds_and_debt_swaps + other) %>%
+  rename(region = country) %>%
+  mutate(region = case_when(region == "United States" ~ "USA", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Myanmar (Burma)" ~ "Myanmar", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Tanzania, United Republic of" ~ "Tanzania", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "United Kingdom" ~ "UK", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Congo" ~ "Republic of Congo", 
+                            TRUE ~ as.character(region)))
+world_map <- map_data(map = "world"
+                      , region = ".")
+funding_map <- cons_selected %>%
+  right_join(world_map, by = "region")
+write_csv(x = funding_map, file = "./conservation_final.csv")
 
 ####### Count of Species exported by each country #########
 exp_country <- data %>%
