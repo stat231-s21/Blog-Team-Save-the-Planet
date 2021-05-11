@@ -112,6 +112,8 @@ server <- function(input, output) {
   
   #TAB 1: Threatened Species Details
   # map of species distribution by country and category
+  world_map <- map_data(map = "world"
+                        , region = ".")
   map_data <- reactive({
     data <- filter(threatened_iucn, Category %in% input$concern_lvl) %>%
       full_join(world_map, by = c("Country" = "region"))
