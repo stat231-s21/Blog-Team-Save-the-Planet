@@ -68,7 +68,6 @@ threatened_iucn <- threatened_country_clean %>%
   left_join(red_list_cats, by = "Red_list_category") %>%
   drop_na()
 
-# join with world map
 world_map <- map_data(map = "world"
                       , region = ".")
 
