@@ -72,9 +72,6 @@ threatened_iucn <- threatened_country_clean %>%
 world_map <- map_data(map = "world"
                       , region = ".")
 
-threatened_world <- threatened_iucn %>%
-  full_join(world_map, by = c("Country" = "region")) 
-
 #############################
 
 # define choice values and labels for user inputs #
@@ -108,16 +105,21 @@ ui <- navbarPage(
 server <- function(input,output,session){
   # map of species distribution by country and category
   map_data <- reactive({
-    data <- filter(threatened_world, Category %in% input$concern_lvl)
+    data <- filter(threatened_iucn, Category %in% input$concern_lvl) %>%
+      full_join(world_map, by = c("Country" = "region"))
   })
+    
   
   output$map <- renderPlot({
     ggplot(data = map_data(), aes(x = long, y = lat, group = group)) +
       geom_polygon(mapping = aes(x = long, y = lat, fill = num_species), 
-                   colour = "white") +
+                   colour = "black") +
       theme_void()  +
       coord_fixed(ratio = 1.3) +
-      scale_fill_viridis(option = "magma", direction = -1, na.value = "gray") 
+      scale_fill_viridis(option = "magma", direction = -1, na.value = "white") +
+      labs(title = "Global Species Diversity by IUCN Threat Level"
+           , fill = "Number of Species*"
+           , caption = "*Regions in white have no data")
   })
 }
 
