@@ -142,3 +142,8 @@ threatened_iucn <- threatened_country_clean %>%
 # join with world map
 world_map <- map_data(map = "world"
                       , region = ".")
+
+write_csv(x = threatened_iucn, file = "./threatenediucn_final.csv")
+
+
+
