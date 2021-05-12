@@ -38,7 +38,7 @@ You should test out updating your GitHub Pages website:
 - go to https://stat231-s21.github.io/Blog-Team-Save-the-Planet/ to see the published test document (this is publicly available!)
 
 ### Biodiversity
-```{r}
+```{r, echo = FALSE}
 threatened_iucn <- read.csv("threatenediucn_final.csv")
 world_map <- map_data(map = "world"
                       , region = ".")
@@ -63,7 +63,7 @@ ggplot(data = threatened_all, aes(x = long, y = lat, group = group)) +
 ### International Trade
 
 ### Conservation Funding (as of 2013)
-```{r}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 conservation <- read_csv("conservation_final.csv")
 
 # Map of Log(funding)
@@ -161,11 +161,6 @@ ggplot(conservation, aes(x = long, y = lat, group = group,
           direction = "auto"))
    plot
 ```
-
-
-
-In a study from the 1920s, fifty cars were used to see how the speed of the car and the distance taken to stop were related.  Speeds ranged between `r min(cars$speed)` and `r max(cars$speed)` mph.  Distances taken to stop ranged between `r min(cars$dist)` and `r max(cars$dist)` feet, with the middle 50% falling between `r as.numeric(quantile(cars$dist)[2])` and `r as.numeric(quantile(cars$dist)[4])` feet.  
-
 
 
 ## Including links and images
