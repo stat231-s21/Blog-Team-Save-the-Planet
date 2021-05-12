@@ -27,15 +27,7 @@ library(kableExtra)
 
 ## World Maps
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For example, you can include **Bold** and _Italic_ and `Code` text.  For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-You should test out updating your GitHub Pages website:
-
-- clone your group's blog project repo in RStudio
-- update "Your Project Title Here" to a new title in the YAML header
-- knit `index.Rmd` 
-- commit and push BOTH the `index.Rmd` and the `index.html` files
-- go to https://stat231-s21.github.io/Blog-Team-Save-the-Planet/ to see the published test document (this is publicly available!)
+For interactive versions of these maps, click [here](https://edaisy21.shinyapps.io/blog_app/)
 
 ### Biodiversity
 ```{r, echo = FALSE}
@@ -54,11 +46,12 @@ ggplot(data = threatened_all, aes(x = long, y = lat, group = group)) +
       theme_void()  +
       coord_fixed(ratio = 1.3) +
       scale_fill_viridis(option = "magma", direction = -1, na.value = "white") +
-      labs(title = "Global Species Diversity by IUCN Threat Level"
+      labs(title = "Global Species Diversity"
            , fill = "Number of Species*"
            , caption = "*Regions in white have no data")
 ```
 
+  This figure depicts the total number of species by country that are included in the IUCN Redlist. Note that this clearly is not an accurate representation of global biodiversity. Tropical regions are known to harbor far greater biodiversity than more temperate regions, such as most of Europe or the United States. Thus the fact that the United States and Canada are displayed as having the greatest species richness here, followed by places like Australia, could be a function of the area of these countries, but that alone would not be sufficient to explain the disparity, because places like Russia and China do not display the same unusually high species richness. This is probably due then to the amount of available resources that each country devotes to the tabulation of species data, because tropical regions may not have as many resources and researchers as the United States to devote to the counting of species, and places like China and Russia may not prioritize it as heavily. 
 
 ### International Trade
 
@@ -79,6 +72,8 @@ ggplot(conservation, aes(x = long, y = lat, group = group,
   #scale_fill_continuous(low="thistle2", high="darkred",guide="colorbar", na.value="white")
   scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
 ```
+
+This figure depicts the amount of funding each country is granted and/or devotes to conservation, on a log scale. The countries that receive and utilize the most conservation funding are the same countries that are displayed above as having the greatest biodiversity. This is not surprising, in that it is probably since both of these variables (conservation funding and observed species counts) are a function of the amount to which a country is able to and chooses to prioritize conservation efforts. We know that these countries are not in fact the most biodiverse however, so although it is good that they prioritize conservation within their borders, the fact that conservation in Africa and Central America is underfunded in comparison should be a cause for concern.
 
 ### Network of Trade between countries
 
@@ -163,30 +158,25 @@ ggplot(conservation, aes(x = long, y = lat, group = group,
 ```
 
 
-## Including links and images
+## United States Data
 
-You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images. ![team logo](https://raw.githubusercontent.com/stat231-s21/Blog-Team-Save-the-Planet/main/images/s1g4-environment.png)
+  One takeaway from the maps above is that the United States tend to have the funding and the drive to record large quantities of data about species diversity. Let's take a closer look at some differences within the United States.
+  
+### National Parks
 
-You can embed a gif.
+```{r, echo = FALSE}
+np_species_by_area <- read_csv("np_tot_species.csv")
 
-![pugs](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
+ggplot(data = np_species_by_area, aes(x = reorder(park_name, n), 
+                                      y = n)) +
+                geom_bar(stat = "Identity", aes(fill = park_name)) + 
+                theme(axis.text.x = element_text(angle = 90, 
+                                                 hjust = 1)) +
+                theme(legend.position = "none") +
+                labs(title = "Total Number of Species By Park") +
+                xlab("Park") + 
+                ylab("Total Species")
+```
 
-# You can even create tabs if you want! {.tabset .tabset-fade .tabset-pills}
-
-## Bulleted list
-
-You can make a bulleted list like this:
-
-- item 1
-- item 2
-- item 3
-
-
-## Numbered list
-
-You can make a numbered list like this
-
-1. First thing I want to say
-2. Second thing I want to say
-3. Third thing I want to say
+  This plot shows the total species in 
 

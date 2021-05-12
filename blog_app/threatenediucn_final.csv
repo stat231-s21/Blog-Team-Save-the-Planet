@@ -1,0 +1,566 @@
+Red_list_category,Country,num_species,Category
+CR,Angola,1,Critically Endangered
+CR,Antigua,5,Critically Endangered
+CR,Australia,20,Critically Endangered
+CR,Barbados,2,Critically Endangered
+CR,Bonaire,1,Critically Endangered
+CR,Botswana,1,Critically Endangered
+CR,Brazil,5,Critically Endangered
+CR,Cameroon,2,Critically Endangered
+CR,Canada,5,Critically Endangered
+CR,Central African Republic,1,Critically Endangered
+CR,Chad,2,Critically Endangered
+CR,Chile,1,Critically Endangered
+CR,China,11,Critically Endangered
+CR,Comoros,1,Critically Endangered
+CR,Costa Rica,3,Critically Endangered
+CR,Denmark,1,Critically Endangered
+CR,Djibouti,1,Critically Endangered
+CR,Dominican Republic,2,Critically Endangered
+CR,Ecuador,4,Critically Endangered
+CR,Ethiopia,3,Critically Endangered
+CR,France,4,Critically Endangered
+CR,French Southern Territories,2,Critically Endangered
+CR,Germany,2,Critically Endangered
+CR,Greece,1,Critically Endangered
+CR,Guadeloupe,1,Critically Endangered
+CR,Guam,1,Critically Endangered
+CR,Guinea-Bissau,1,Critically Endangered
+CR,India,37,Critically Endangered
+CR,Indonesia,8,Critically Endangered
+CR,International Waters,2,Critically Endangered
+CR,Kazakhstan,5,Critically Endangered
+CR,Kenya,12,Critically Endangered
+CR,Kiribati,1,Critically Endangered
+CR,North Korea,1,Critically Endangered
+CR,Madagascar,3,Critically Endangered
+CR,Malawi,1,Critically Endangered
+CR,Malaysia,5,Critically Endangered
+CR,Mauritius,2,Critically Endangered
+CR,Mexico,9,Critically Endangered
+CR,Morocco,4,Critically Endangered
+CR,Mozambique,1,Critically Endangered
+CR,Namibia,2,Critically Endangered
+CR,Nepal,8,Critically Endangered
+CR,Netherlands,1,Critically Endangered
+CR,New Zealand,2,Critically Endangered
+CR,Northern Mariana Islands,2,Critically Endangered
+CR,Norway,1,Critically Endangered
+CR,Pakistan,34,Critically Endangered
+CR,Peru,1,Critically Endangered
+CR,Portugal,1,Critically Endangered
+CR,Puerto Rico,6,Critically Endangered
+CR,Romania,3,Critically Endangered
+CR,Russia,11,Critically Endangered
+CR,Rwanda,1,Critically Endangered
+CR,Saint Helena,3,Critically Endangered
+CR,Seychelles,4,Critically Endangered
+CR,Somalia,2,Critically Endangered
+CR,South Africa,8,Critically Endangered
+CR,Spain,12,Critically Endangered
+CR,Sudan,1,Critically Endangered
+CR,Suriname,1,Critically Endangered
+CR,Swaziland,1,Critically Endangered
+CR,Sweden,1,Critically Endangered
+CR,Tanzania,8,Critically Endangered
+CR,Thailand,1,Critically Endangered
+CR,Turkey,1,Critically Endangered
+CR,Uganda,7,Critically Endangered
+CR,UK,4,Critically Endangered
+CR,USA,19,Critically Endangered
+CR,United States Minor Outlying Islands,2,Critically Endangered
+CR,Venezuela,4,Critically Endangered
+CR,Vietnam,6,Critically Endangered
+CR,Virgin Islands,1,Critically Endangered
+CR,Western Sahara,1,Critically Endangered
+CR,Zambia,2,Critically Endangered
+CR,Zimbabwe,3,Critically Endangered
+EN,Albania,1,Endangered
+EN,Algeria,3,Endangered
+EN,Antarctica,3,Endangered
+EN,Argentina,4,Endangered
+EN,Australia,36,Endangered
+EN,Azerbaijan,2,Endangered
+EN,Bahamas,2,Endangered
+EN,Bangladesh,5,Endangered
+EN,Bermuda,1,Endangered
+EN,Botswana,1,Endangered
+EN,Brazil,11,Endangered
+EN,Bulgaria,1,Endangered
+EN,Cambodia,2,Endangered
+EN,Canada,39,Endangered
+EN,Cape Verde,1,Endangered
+EN,Cayman Islands,6,Endangered
+EN,Chile,5,Endangered
+EN,China,11,Endangered
+EN,Christmas Island,2,Endangered
+EN,Colombia,4,Endangered
+EN,Comoros,2,Endangered
+EN,Democratic Republic of the Congo,5,Endangered
+EN,Costa Rica,6,Endangered
+EN,Ivory Coast,2,Endangered
+EN,Cyprus,4,Endangered
+EN,Dominican Republic,2,Endangered
+EN,Ecuador,3,Endangered
+EN,Ethiopia,10,Endangered
+EN,France,1,Endangered
+EN,French Polynesia,3,Endangered
+EN,French Southern Territories,5,Endangered
+EN,Gabon,1,Endangered
+EN,Spain,2,Endangered
+EN,Greece,9,Endangered
+EN,Greenland,1,Endangered
+EN,Guadeloupe,1,Endangered
+EN,Guam,2,Endangered
+EN,Guinea,2,Endangered
+EN,China,1,Endangered
+EN,Iceland,4,Endangered
+EN,India,51,Endangered
+EN,Indonesia,8,Endangered
+EN,International Waters,1,Endangered
+EN,Iran,2,Endangered
+EN,Israel,1,Endangered
+EN,Italy,2,Endangered
+EN,Japan,4,Endangered
+EN,Kenya,14,Endangered
+EN,Kiribati,6,Endangered
+EN,North Korea,7,Endangered
+EN,Laos,2,Endangered
+EN,Lesotho,1,Endangered
+EN,Liberia,1,Endangered
+EN,Madagascar,6,Endangered
+EN,Malaysia,9,Endangered
+EN,Mali,1,Endangered
+EN,Mauritius,8,Endangered
+EN,Mexico,9,Endangered
+EN,Mongolia,5,Endangered
+EN,Morocco,5,Endangered
+EN,Mozambique,1,Endangered
+EN,Myanmar,2,Endangered
+EN,Namibia,23,Endangered
+EN,Nepal,4,Endangered
+EN,New Caledonia,1,Endangered
+EN,New Zealand,10,Endangered
+EN,Northern Mariana Islands,2,Endangered
+EN,Pakistan,15,Endangered
+EN,Panama,2,Endangered
+EN,Paraguay,1,Endangered
+EN,Peru,4,Endangered
+EN,Puerto Rico,11,Endangered
+EN,Romania,1,Endangered
+EN,Russia,22,Endangered
+EN,Saint Helena,4,Endangered
+EN,Serbia,1,Endangered
+EN,Seychelles,11,Endangered
+EN,Sierra Leone,1,Endangered
+EN,South Africa,60,Endangered
+EN,South Georgia And The South Sandwich Islands,2,Endangered
+EN,Spain,6,Endangered
+EN,Sri Lanka,1,Endangered
+EN,Suriname,1,Endangered
+EN,Swaziland,1,Endangered
+EN,Syria,1,Endangered
+EN,Taiwan,6,Endangered
+EN,Tanzania,3,Endangered
+EN,Thailand,6,Endangered
+EN,Tunisia,1,Endangered
+EN,Turkey,26,Endangered
+EN,Turkmenistan,1,Endangered
+EN,Uganda,24,Endangered
+EN,UK,1,Endangered
+EN,USA,84,Endangered
+EN,Uzbekistan,2,Endangered
+EN,Vietnam,1,Endangered
+EN,Virgin Islands,2,Endangered
+EN,Zimbabwe,1,Endangered
+EW,Canada,1,Extinct in the Wild
+EW,Guam,2,Extinct in the Wild
+EW,Uganda,1,Extinct in the Wild
+EX,Costa Rica,1,Extinct
+EX,Ecuador,3,Extinct
+EX,Guatemala,1,Extinct
+LC,<cc><c9>land Islands,1,Least Concern
+LC,Albania,14,Least Concern
+LC,Algeria,4,Least Concern
+LC,American Samoa,2,Least Concern
+LC,Andorra,1,Least Concern
+LC,Antarctica,25,Least Concern
+LC,Antigua,6,Least Concern
+LC,Argentina,23,Least Concern
+LC,Australia,394,Least Concern
+LC,Austria,32,Least Concern
+LC,Bahamas,1,Least Concern
+LC,Bangladesh,1,Least Concern
+LC,Barbados,2,Least Concern
+LC,Belarus,10,Least Concern
+LC,Belgium,19,Least Concern
+LC,Belize,28,Least Concern
+LC,Benin,4,Least Concern
+LC,Bermuda,1,Least Concern
+LC,Bolivia,1,Least Concern
+LC,Botswana,2,Least Concern
+LC,Brazil,344,Least Concern
+LC,British Indian Ocean Territory,17,Least Concern
+LC,Bulgaria,11,Least Concern
+LC,Burundi,1,Least Concern
+LC,Cambodia,1,Least Concern
+LC,Cameroon,33,Least Concern
+LC,Canada,3115,Least Concern
+LC,Cayman Islands,7,Least Concern
+LC,Central African Republic,13,Least Concern
+LC,Chad,1,Least Concern
+LC,Chile,24,Least Concern
+LC,China,17,Least Concern
+LC,Colombia,3,Least Concern
+LC,Democratic Republic of the Congo,2,Least Concern
+LC,Cook Islands,1,Least Concern
+LC,Costa Rica,15,Least Concern
+LC,Croatia,10,Least Concern
+LC,Ivory Coast,12,Least Concern
+LC,Cyprus,4,Least Concern
+LC,Czech Republic,23,Least Concern
+LC,Denmark,91,Least Concern
+LC,Dominican Republic,6,Least Concern
+LC,Ecuador,3,Least Concern
+LC,Egypt,17,Least Concern
+LC,Estonia,34,Least Concern
+LC,Ethiopia,15,Least Concern
+LC,Falkland Islands,1,Least Concern
+LC,Finland,151,Least Concern
+LC,France,219,Least Concern
+LC,French Guiana,4,Least Concern
+LC,French Polynesia,20,Least Concern
+LC,French Southern Territories,16,Least Concern
+LC,Germany,225,Least Concern
+LC,Ghana,19,Least Concern
+LC,Greece,28,Least Concern
+LC,Greenland,45,Least Concern
+LC,Guam,10,Least Concern
+LC,Guinea,8,Least Concern
+LC,Guinea-Bissau,7,Least Concern
+LC,Haiti,8,Least Concern
+LC,Heard Island,5,Least Concern
+LC,China,5,Least Concern
+LC,Hungary,16,Least Concern
+LC,Iceland,37,Least Concern
+LC,India,130,Least Concern
+LC,Indonesia,10,Least Concern
+LC,International Waters,12,Least Concern
+LC,Iran,3,Least Concern
+LC,Ireland,31,Least Concern
+LC,Israel,2,Least Concern
+LC,Italy,124,Least Concern
+LC,Japan,16,Least Concern
+LC,Jordan,2,Least Concern
+LC,Kenya,69,Least Concern
+LC,North Korea,41,Least Concern
+LC,Latvia,8,Least Concern
+LC,Lithuania,7,Least Concern
+LC,Macedonia,1,Least Concern
+LC,Madagascar,7,Least Concern
+LC,Malawi,11,Least Concern
+LC,Malaysia,22,Least Concern
+LC,Maldives,1,Least Concern
+LC,Mali,13,Least Concern
+LC,Malta,3,Least Concern
+LC,Mauritania,11,Least Concern
+LC,Mexico,57,Least Concern
+LC,Mongolia,2,Least Concern
+LC,Montenegro,8,Least Concern
+LC,Morocco,69,Least Concern
+LC,Mozambique,10,Least Concern
+LC,Namibia,14,Least Concern
+LC,Netherlands,60,Least Concern
+LC,New Caledonia,7,Least Concern
+LC,New Zealand,15,Least Concern
+LC,Niger,2,Least Concern
+LC,Nigeria,21,Least Concern
+LC,Northern Mariana Islands,8,Least Concern
+LC,Norway,450,Least Concern
+LC,Pakistan,9,Least Concern
+LC,Panama,5,Least Concern
+LC,Peru,34,Least Concern
+LC,Philippines,33,Least Concern
+LC,Poland,82,Least Concern
+LC,Portugal,23,Least Concern
+LC,Puerto Rico,27,Least Concern
+LC,Romania,74,Least Concern
+LC,Russia,139,Least Concern
+LC,Rwanda,2,Least Concern
+LC,Saint Helena,2,Least Concern
+LC,Saint Kitts,1,Least Concern
+LC,Samoa,1,Least Concern
+LC,Senegal,32,Least Concern
+LC,Serbia,7,Least Concern
+LC,Seychelles,15,Least Concern
+LC,Singapore,2,Least Concern
+LC,Slovakia,21,Least Concern
+LC,Slovenia,11,Least Concern
+LC,Solomon Islands,5,Least Concern
+LC,South Africa,117,Least Concern
+LC,South Georgia And The South Sandwich Islands,5,Least Concern
+LC,Spain,515,Least Concern
+LC,Sri Lanka,2,Least Concern
+LC,Svalbard And Jan Mayen,9,Least Concern
+LC,Sweden,186,Least Concern
+LC,Switzerland,38,Least Concern
+LC,Taiwan,6,Least Concern
+LC,Tajikistan,1,Least Concern
+LC,Tanzania,138,Least Concern
+LC,Thailand,13,Least Concern
+LC,Tonga,1,Least Concern
+LC,Tunisia,6,Least Concern
+LC,Turkey,65,Least Concern
+LC,Turkmenistan,1,Least Concern
+LC,Uganda,111,Least Concern
+LC,Ukraine,128,Least Concern
+LC,UK,460,Least Concern
+LC,USA,1253,Least Concern
+LC,United States Minor Outlying Islands,4,Least Concern
+LC,Uzbekistan,1,Least Concern
+LC,Venezuela,3,Least Concern
+LC,Virgin Islands,1,Least Concern
+LC,Virgin Islands,14,Least Concern
+LC,Zambia,20,Least Concern
+LC,Zimbabwe,48,Least Concern
+LC,Brazil,1,Least Concern
+LC,Ecuador,2,Least Concern
+LC,Peru,2,Least Concern
+LC,South Africa,6,Least Concern
+LC,Venezuela,1,Least Concern
+LC,Australia,30,Least Concern
+LC,Botswana,2,Least Concern
+LC,Brazil,1,Least Concern
+LC,Canada,21,Least Concern
+LC,Colombia,2,Least Concern
+LC,Finland,1,Least Concern
+LC,France,1,Least Concern
+LC,Greenland,1,Least Concern
+LC,Iceland,1,Least Concern
+LC,Indonesia,6,Least Concern
+LC,Italy,1,Least Concern
+LC,New Zealand,3,Least Concern
+LC,Norway,45,Least Concern
+LC,Papua New Guinea,22,Least Concern
+LC,Peru,1,Least Concern
+LC,Russia,2,Least Concern
+LC,South Africa,2,Least Concern
+LC,Tanzania,5,Least Concern
+LC,Uganda,1,Least Concern
+LC,UK,4,Least Concern
+LC,USA,7,Least Concern
+LC,Zambia,4,Least Concern
+LC,Australia,1,Least Concern
+LC,Colombia,1,Least Concern
+LC,Spain,1,Least Concern
+LC,USA,5,Least Concern
+NT,Albania,1,Near Threatened
+NT,American Samoa,1,Near Threatened
+NT,Antarctica,100,Near Threatened
+NT,Antigua,1,Near Threatened
+NT,Argentina,12,Near Threatened
+NT,Australia,75,Near Threatened
+NT,Bahamas,3,Near Threatened
+NT,Belize,1,Near Threatened
+NT,Bolivia,1,Near Threatened
+NT,Botswana,2,Near Threatened
+NT,Brazil,19,Near Threatened
+NT,Cambodia,3,Near Threatened
+NT,Canada,108,Near Threatened
+NT,Cayman Islands,2,Near Threatened
+NT,Chile,7,Near Threatened
+NT,China,4,Near Threatened
+NT,Democratic Republic of the Congo,4,Near Threatened
+NT,Costa Rica,3,Near Threatened
+NT,Denmark,10,Near Threatened
+NT,Egypt,2,Near Threatened
+NT,Estonia,3,Near Threatened
+NT,Ethiopia,1,Near Threatened
+NT,Falkland Islands,45,Near Threatened
+NT,Fiji,1,Near Threatened
+NT,Finland,7,Near Threatened
+NT,France,12,Near Threatened
+NT,French Guiana,1,Near Threatened
+NT,French Polynesia,1,Near Threatened
+NT,French Southern Territories,7,Near Threatened
+NT,Germany,49,Near Threatened
+NT,Ghana,1,Near Threatened
+NT,Greece,7,Near Threatened
+NT,Greenland,5,Near Threatened
+NT,Guam,1,Near Threatened
+NT,Guinea-Bissau,3,Near Threatened
+NT,Guyana,1,Near Threatened
+NT,Heard Island,6,Near Threatened
+NT,Hungary,1,Near Threatened
+NT,Iceland,4,Near Threatened
+NT,India,27,Near Threatened
+NT,Indonesia,3,Near Threatened
+NT,International Waters,13,Near Threatened
+NT,Ireland,3,Near Threatened
+NT,Italy,13,Near Threatened
+NT,Japan,1,Near Threatened
+NT,Kenya,13,Near Threatened
+NT,North Korea,15,Near Threatened
+NT,Malaysia,17,Near Threatened
+NT,Mali,1,Near Threatened
+NT,Mauritania,3,Near Threatened
+NT,Mexico,5,Near Threatened
+NT,Morocco,10,Near Threatened
+NT,Mozambique,1,Near Threatened
+NT,Namibia,4,Near Threatened
+NT,Nepal,1,Near Threatened
+NT,Netherlands,4,Near Threatened
+NT,New Caledonia,1,Near Threatened
+NT,New Zealand,13,Near Threatened
+NT,Norfolk Island,1,Near Threatened
+NT,Northern Mariana Islands,1,Near Threatened
+NT,Norway,36,Near Threatened
+NT,Pakistan,1,Near Threatened
+NT,Papua New Guinea,6,Near Threatened
+NT,Peru,1,Near Threatened
+NT,Poland,4,Near Threatened
+NT,Portugal,1,Near Threatened
+NT,Russia,7,Near Threatened
+NT,Senegal,2,Near Threatened
+NT,Seychelles,4,Near Threatened
+NT,Singapore,1,Near Threatened
+NT,Slovenia,1,Near Threatened
+NT,South Africa,30,Near Threatened
+NT,South Georgia And The South Sandwich Islands,3,Near Threatened
+NT,Spain,37,Near Threatened
+NT,Sri Lanka,1,Near Threatened
+NT,Sudan,1,Near Threatened
+NT,Suriname,1,Near Threatened
+NT,Svalbard And Jan Mayen,1,Near Threatened
+NT,Swaziland,1,Near Threatened
+NT,Sweden,8,Near Threatened
+NT,Switzerland,1,Near Threatened
+NT,Tanzania,4,Near Threatened
+NT,Thailand,6,Near Threatened
+NT,Turkey,5,Near Threatened
+NT,Uganda,4,Near Threatened
+NT,Ukraine,11,Near Threatened
+NT,United Arab Emirates,1,Near Threatened
+NT,UK,39,Near Threatened
+NT,USA,105,Near Threatened
+NT,United States Minor Outlying Islands,1,Near Threatened
+NT,Uruguay,1,Near Threatened
+NT,Uzbekistan,1,Near Threatened
+NT,Virgin Islands,3,Near Threatened
+NT,Zambia,2,Near Threatened
+NT,Zimbabwe,5,Near Threatened
+VU,<cc><c9>land Islands,1,Vulnerable
+VU,Albania,2,Vulnerable
+VU,Angola,2,Vulnerable
+VU,Argentina,4,Vulnerable
+VU,Australia,28,Vulnerable
+VU,Austria,3,Vulnerable
+VU,Azerbaijan,1,Vulnerable
+VU,Belarus,2,Vulnerable
+VU,Belize,5,Vulnerable
+VU,Bolivia,1,Vulnerable
+VU,Botswana,4,Vulnerable
+VU,Brazil,8,Vulnerable
+VU,Bulgaria,4,Vulnerable
+VU,Cambodia,3,Vulnerable
+VU,Cameroon,7,Vulnerable
+VU,Canada,103,Vulnerable
+VU,Cayman Islands,1,Vulnerable
+VU,Central African Republic,2,Vulnerable
+VU,Chile,5,Vulnerable
+VU,China,17,Vulnerable
+VU,Democratic Republic of the Congo,2,Vulnerable
+VU,Cook Islands,3,Vulnerable
+VU,Costa Rica,12,Vulnerable
+VU,Croatia,1,Vulnerable
+VU,Ivory Coast,2,Vulnerable
+VU,Curacao,1,Vulnerable
+VU,Czech Republic,2,Vulnerable
+VU,Denmark,1,Vulnerable
+VU,Dominica,1,Vulnerable
+VU,Dominican Republic,3,Vulnerable
+VU,Ecuador,10,Vulnerable
+VU,Estonia,3,Vulnerable
+VU,Falkland Islands,39,Vulnerable
+VU,Faroe Islands,3,Vulnerable
+VU,Finland,2,Vulnerable
+VU,France,7,Vulnerable
+VU,French Guiana,6,Vulnerable
+VU,French Southern Territories,7,Vulnerable
+VU,Gabon,4,Vulnerable
+VU,Germany,7,Vulnerable
+VU,Ghana,7,Vulnerable
+VU,Greece,7,Vulnerable
+VU,Greenland,4,Vulnerable
+VU,Guinea-Bissau,2,Vulnerable
+VU,Honduras,2,Vulnerable
+VU,Hungary,6,Vulnerable
+VU,Iceland,4,Vulnerable
+VU,India,33,Vulnerable
+VU,Indonesia,11,Vulnerable
+VU,International Waters,27,Vulnerable
+VU,Iran,2,Vulnerable
+VU,Ireland,2,Vulnerable
+VU,Israel,3,Vulnerable
+VU,Italy,6,Vulnerable
+VU,Japan,11,Vulnerable
+VU,Kazakhstan,1,Vulnerable
+VU,Kenya,12,Vulnerable
+VU,North Korea,5,Vulnerable
+VU,Latvia,1,Vulnerable
+VU,Lithuania,3,Vulnerable
+VU,Macedonia,1,Vulnerable
+VU,Malawi,1,Vulnerable
+VU,Malaysia,8,Vulnerable
+VU,Malta,1,Vulnerable
+VU,Mauritius,3,Vulnerable
+VU,Mexico,7,Vulnerable
+VU,Montenegro,1,Vulnerable
+VU,Morocco,4,Vulnerable
+VU,Mozambique,5,Vulnerable
+VU,Namibia,5,Vulnerable
+VU,Nepal,5,Vulnerable
+VU,Netherlands,1,Vulnerable
+VU,New Zealand,20,Vulnerable
+VU,Norway,23,Vulnerable
+VU,Oman,2,Vulnerable
+VU,Pakistan,16,Vulnerable
+VU,Panama,1,Vulnerable
+VU,Papua New Guinea,3,Vulnerable
+VU,Peru,5,Vulnerable
+VU,Philippines,1,Vulnerable
+VU,Poland,7,Vulnerable
+VU,Portugal,5,Vulnerable
+VU,Puerto Rico,5,Vulnerable
+VU,Romania,6,Vulnerable
+VU,Russia,20,Vulnerable
+VU,Saint Helena,2,Vulnerable
+VU,Saint Lucia,1,Vulnerable
+VU,Saudi Arabia,2,Vulnerable
+VU,Seychelles,5,Vulnerable
+VU,Slovakia,3,Vulnerable
+VU,Solomon Islands,1,Vulnerable
+VU,South Africa,76,Vulnerable
+VU,South Georgia And The South Sandwich Islands,18,Vulnerable
+VU,Spain,26,Vulnerable
+VU,Sri Lanka,1,Vulnerable
+VU,Suriname,8,Vulnerable
+VU,Swaziland,2,Vulnerable
+VU,Sweden,8,Vulnerable
+VU,Tanzania,33,Vulnerable
+VU,Thailand,8,Vulnerable
+VU,Trinidad And Tobago,2,Vulnerable
+VU,Turkey,7,Vulnerable
+VU,Turkmenistan,2,Vulnerable
+VU,Uganda,21,Vulnerable
+VU,Ukraine,5,Vulnerable
+VU,United Arab Emirates,1,Vulnerable
+VU,UK,29,Vulnerable
+VU,USA,132,Vulnerable
+VU,United States Minor Outlying Islands,2,Vulnerable
+VU,Uruguay,1,Vulnerable
+VU,Venezuela,4,Vulnerable
+VU,Virgin Islands,1,Vulnerable
+VU,Virgin Islands,4,Vulnerable
+VU,Zambia,17,Vulnerable
+VU,Zimbabwe,13,Vulnerable

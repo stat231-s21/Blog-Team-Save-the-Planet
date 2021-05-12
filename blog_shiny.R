@@ -17,9 +17,15 @@ library(ggrepel)
 library(readr)
 library(leaflet) # for interactive maps
 library(shinythemes) # for a theme
-library(wordcloud)
+library(rgdal)
+library(sqldf)
+library(maps)
 library(shinyWidgets)
 library(bslib)
+library(viridis)
+library(ggnetwork)
+library(igraph)
+library(RColorBrewer)
 
 #Importing Data
 conservation <- read_csv("conservation_final.csv")
