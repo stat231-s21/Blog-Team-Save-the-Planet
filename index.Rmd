@@ -56,7 +56,7 @@ ggplot(data = threatened_all, aes(x = long, y = lat, group = group)) +
 ### International Trade
 
 ### Conservation Funding (as of 2013)
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, class.source = "greenCode"}
 conservation <- read_csv("conservation_final.csv")
 
 # Map of Log(funding)
@@ -158,13 +158,16 @@ This figure depicts the amount of funding each country is granted and/or devotes
 ```
 
 
+
+
 ## United States Data
 
-  One takeaway from the maps above is that the United States tend to have the funding and the drive to record large quantities of data about species diversity. Let's take a closer look at some differences within the United States.
+  One takeaway from the maps above is that the United States tend to have the funding and the drive to record large quantities of data about species diversity. Below are some charts that allow us to see the differences between places within the United States.
   
 ### National Parks
 
-```{r, echo = FALSE}
+
+```{r, echo = FALSE, message = FALSE}
 np_species_by_area <- read_csv("np_tot_species.csv")
 
 ggplot(data = np_species_by_area, aes(x = reorder(park_name, n), 
@@ -178,5 +181,24 @@ ggplot(data = np_species_by_area, aes(x = reorder(park_name, n),
                 ylab("Total Species")
 ```
 
-  This plot shows the total species in 
+### Northeastern Cities
+
+```{r, echo = FALSE, message = FALSE}
+cities <- read_csv("cities_final.csv")
+ggplot(cities, aes(x = City, y = Total)) + 
+  geom_bar(stat = "Identity", aes(fill = City)) +
+  labs(title = "Total Species By City") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  ylab("Total Species")
+```
+
+```{r, echo = FALSE}
+ggplot(cities, aes(x = City, y = Species)) + 
+  geom_bar(stat = "Identity", aes(fill = Origin)) +
+  labs(title = "Native and Introduced Species By City") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  ylab("Total Species")
+```
+
+  It makes sense that more species have been introduced to the four coastal cities than to the four inland cities, considering how many invasive species are transported (intentionally or not) by boats.
 
