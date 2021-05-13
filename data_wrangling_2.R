@@ -13,6 +13,10 @@
 #https://datadryad.org/stash/dataset/doi:10.5061/dryad.p69t1
 #Accessed April 2021
 
+#GDP Information (from 2019):
+#https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+#Accessed May 2021
+
 #Load Libraries
 library(tidyverse)
 library(robotstxt)
@@ -62,11 +66,25 @@ cons_selected <- conservation %>%
                             TRUE ~ as.character(region))) %>%
   mutate(log_funding = log(total)) %>%
   mutate(sqrt_funding = sqrt(total))
+#Joining World Map
 world_map <- map_data(map = "world"
                       , region = ".")
 funding_map <- cons_selected %>%
   right_join(world_map, by = "region")
-write_csv(x = funding_map, file = "./conservation_final.csv")
+#Scraping and Joining GDPs
+url <- "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)"
+table <- (url %>%
+            read_html() %>%
+            html_nodes("table")) [[5]] %>%
+  html_table() %>%
+  janitor::clean_names() %>%
+  rename(region = country_territory) %>%
+  mutate(gdp_us_million = str_remove_all(gdp_us_million, ",")) %>%
+  mutate(gdp = as.numeric(gdp_us_million))
+funding_map_final <- funding_map %>%
+  right_join(table, by = "region") %>%
+  mutate(funding_per_GDP = total/gdp)
+write_csv(x = funding_map_final, file = "./conservation_final.csv")
 
 ####### Count of Species exported by each country #########
 exp_country <- data %>%

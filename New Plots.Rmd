@@ -20,6 +20,15 @@ conservation <- read_csv("conservation_final.csv")
 ```
 
 ```{r}
+url <- "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)"
+table <- (url %>%
+  read_html() %>%
+  html_nodes("table")) [[5]] %>%
+  html_table() %>%
+  janitor::clean_names()
+```
+
+```{r}
 # Total Species By City
 ggplot(cities, aes(x = City, y = Total)) + 
   geom_bar(stat = "Identity", aes(fill = City)) +
