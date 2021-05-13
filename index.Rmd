@@ -30,6 +30,7 @@ library(kableExtra)
 For interactive versions of these maps, click [here](https://edaisy21.shinyapps.io/blog_app/)
 
 ### Biodiversity
+
 ```{r, echo = FALSE}
 threatened_iucn <- read.csv("threatenediucn_final.csv")
 world_map <- map_data(map = "world"
@@ -51,11 +52,10 @@ ggplot(data = threatened_all, aes(x = long, y = lat, group = group)) +
            , caption = "*Regions in white have no data")
 ```
 
-  This figure depicts the total number of species by country that are included in the IUCN Redlist. Note that this clearly is not an accurate representation of global biodiversity. Tropical regions are known to harbor far greater biodiversity than more temperate regions, such as most of Europe or the United States. Thus the fact that the United States and Canada are displayed as having the greatest species richness here, followed by places like Australia, could be a function of the area of these countries, but that alone would not be sufficient to explain the disparity, because places like Russia and China do not display the same unusually high species richness. This is probably due then to the amount of available resources that each country devotes to the tabulation of species data, because tropical regions may not have as many resources and researchers as the United States to devote to the counting of species, and places like China and Russia may not prioritize it as heavily. 
-
-### International Trade
+This figure depicts the total number of species by country that are included in the IUCN Redlist. Note that this clearly is not an accurate representation of global biodiversity. Tropical regions are known to harbor far greater biodiversity than more temperate regions, such as most of Europe or the United States. Thus the fact that the United States and Canada are displayed as having the greatest species richness here, followed by places like Australia, could be a function of the area of these countries, but that alone would not be sufficient to explain the disparity, because places like Russia and China do not display the same unusually high species richness. This is probably due then to the amount of available resources that each country devotes to the tabulation of species data, because tropical regions may not have as many resources and researchers as the United States to devote to the counting of species, and places like China and Russia may not prioritize it as heavily. Additionally, it appears that there is not much distinction in biodiversity of the rest of the world compared to the United States and Canada because the color scale is relative and the number of recorded species in these countries is so much greater that it skews the coloring. Therefore, leaving Canada and the United States out of the calculations would give a more comprehensive depiction of the rest of the world's recorded species diversity. 
 
 ### Conservation Funding (as of 2013)
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, class.source = "greenCode"}
 conservation <- read_csv("conservation_final.csv")
 
@@ -73,10 +73,9 @@ ggplot(conservation, aes(x = long, y = lat, group = group,
   scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
 ```
 
-This figure depicts the amount of funding each country is granted and/or devotes to conservation, on a log scale. The countries that receive and utilize the most conservation funding are the same countries that are displayed above as having the greatest biodiversity. This is not surprising, in that it is probably since both of these variables (conservation funding and observed species counts) are a function of the amount to which a country is able to and chooses to prioritize conservation efforts. We know that these countries are not in fact the most biodiverse however, so although it is good that they prioritize conservation within their borders, the fact that conservation in Africa and Central America is underfunded in comparison should be a cause for concern.
+This figure depicts the amount of funding each country is granted and/or devotes to conservation, on a log scale. The countries that receive and utilize the most conservation funding are the same countries that are displayed above as having the greatest biodiversity. This is not surprising, in that it is probably since both of these variables (conservation funding and observed species counts) are a function of the amount to which a country is able to and chooses to prioritize conservation efforts. We know that these countries are not in fact the most biodiverse however, so although it is good that they prioritize conservation within their borders, the fact that conservation in Africa and Central America is underfunded in comparison should be a cause for concern. Additionally, although it appears countries like the United States are doing a great job allocating funding for conservation, this map is relative, so in reality we should be dedicating a lot more funding to preservation of habitats and species. 
 
 ### Network of Trade between countries
-
 
 ```{r, echo = FALSE}
  # Render the Network of trade between countries
@@ -105,7 +104,6 @@ This figure depicts the amount of funding each country is granted and/or devotes
 This figure depicts the trade of species between countries (both imported and exported) and the count of species traded between two countries as a network plot.  The color of the edges between the countries indicate the frequency, as trade between countries numerous, the trade occurrence of over 200 species between the countries is represented.  
 
 ### Count of Species exported by the countries
-
 
 ```{r, , echo = FALSE}
 # data vector to extract the total species exported by each country
@@ -162,10 +160,9 @@ This figure represents a chloropleth map that indicates the total species export
 
 ## United States Data
 
-  One takeaway from the maps above is that the United States tend to have the funding and the drive to record large quantities of data about species diversity. Below are some charts that allow us to see the differences between places within the United States.
+One takeaway from the maps above is that the United States tend to have the funding and the drive to record large quantities of data about species diversity. Below are some charts that allow us to see the differences between places within the United States.
   
 ### National Parks
-
 
 ```{r, echo = FALSE, message = FALSE}
 np_species_by_area <- read_csv("np_tot_species.csv")
@@ -200,5 +197,5 @@ ggplot(cities, aes(x = City, y = Species)) +
   ylab("Total Species")
 ```
 
-  It makes sense that more species have been introduced to the four coastal cities than to the four inland cities, considering how many invasive species are transported (intentionally or not) by boats.
+It makes sense that more species have been introduced to the four coastal cities than to the four inland cities, considering how many invasive species are transported (intentionally or not) by boats. For future studies, it would be worthwhile to continue these comparisons across more Midwest cities as well as cities along the West coast.
 
