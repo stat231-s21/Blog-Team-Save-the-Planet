@@ -152,7 +152,7 @@ server <- function(input, output){
     # vector to render bar plot
     output$time <- renderPlot({
                   ggplot(data = data_03_A, aes(x = app, y = count)) +
-                    geom_bar(stat = "Identity", aes(fill = year)) + 
+                    geom_bar(stat = "Identity", width = 0.5, aes(fill = year)) + 
                     labs(title = paste0(" \nby ", p$id)) +
                     xlab("Appendix") + 
                     ylab("Number of Species")

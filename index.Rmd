@@ -102,6 +102,7 @@ This figure depicts the amount of funding each country is granted and/or devotes
       labs(color = "Total Occurrence") +
       scale_color_continuous(type = "viridis")
 ```
+This figure depicts the trade of species between countries (both imported and exported) and the count of species traded between two countries as a network plot.  The color of the edges between the countries indicate the frequency, as trade between countries numerous, the trade occurrence of over 200 species between the countries is represented.  
 
 ### Count of Species exported by the countries
 
@@ -156,8 +157,7 @@ This figure depicts the amount of funding each country is granted and/or devotes
           direction = "auto"))
    plot
 ```
-
-
+This figure represents a chloropleth map that indicates the total species exported by each country. When a specific country is chosen, the taxonomy of the species exported is represented by a table as well as a bar plot gives the count of species exported categorized by Appendix. An interactive version of the plot click [here]( https://sanj-sund.shinyapps.io/Blog-Team-Save-the-Planet-main/)
 
 
 ## United States Data
