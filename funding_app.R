@@ -10,6 +10,7 @@ library(dplyr)
 library(ggplot2)
 library(ggrepel)
 library(readr)
+library(viridis)
 
 #Importing Data
 conservation <- read_csv("conservation_final.csv")
