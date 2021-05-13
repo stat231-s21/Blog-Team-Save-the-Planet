@@ -267,7 +267,7 @@ server <- function(input, output) {
         geom_polygon(color = "black") +
         theme_void() +
         coord_fixed(ratio = 1.3) +
-        labs(title = "Conservation Funding By Country*"
+        labs(title = "Log(Conservation Funding) By Country*"
              , subtitle = "as of 2013"
              , fill = ""
              , caption = "*Regions in white have no data") +
@@ -280,7 +280,7 @@ server <- function(input, output) {
         geom_polygon(color = "black") +
         theme_void() +
         coord_fixed(ratio = 1.3) +
-        labs(title = "Log(Conservation Funding) By Country*"
+        labs(title = "Conservation Funding By Country*"
              , subtitle = "as of 2013"
              , fill = ""
              , caption = "*Regions in white have no data") +
