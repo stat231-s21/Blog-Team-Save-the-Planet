@@ -100,7 +100,7 @@ ui <- navbarPage(
         sidebarPanel(
           radioButtons(inputId = "gdp"
                        , label = "Display as a fraction of GDP?"
-                       , choices = gdp_ops
+                       , choices = log_ops
                        , selected = "No"),
           radioButtons(inputId = "log"
                        , label = "Take the log?"
@@ -278,7 +278,7 @@ server <- function(input, output) {
                , fill = ""
                , caption = "*Regions in white are missing GDP or funding data") +
           #scale_fill_continuous(low="thistle2", high="darkred",                      guide="colorbar", na.value="white")
-          scale_fill_viridis(option = "plasma", direction = -1, na.value="white")
+          scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
       }
       else {
         ggplot(conservation, aes(x = long, y = lat, group = group, 
