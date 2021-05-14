@@ -113,6 +113,8 @@ table <- (url %>%
   mutate(region = case_when(region == "Congo" ~ "Republic of Congo", 
                             TRUE ~ as.character(region))) %>%
   mutate(region = case_when(region == "Ukraine [n 5]" ~ "Ukraine", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "United Kingdom" ~ "UK", 
                             TRUE ~ as.character(region))) 
 funding_map_final <- funding_map %>%
   left_join(table, by = "region") %>%
