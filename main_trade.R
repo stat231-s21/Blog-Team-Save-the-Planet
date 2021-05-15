@@ -24,6 +24,7 @@ library(igraph)
 
 data <- read.csv("./trade.csv")
 
+
 ############
 #    ui    #
 ############
@@ -141,7 +142,8 @@ server <- function(input, output){
     data_03_A <- data_03 %>%
                 group_by(app, year) %>%
                 summarise(count = n(), .groups = "drop") %>%
-                select(app, count, year)
+                select(app, count, year) %>%
+                mutate(year = as.character(year))
     
     data_03_B <- data_03 %>%
                 filter(app == "I") %>%
@@ -151,8 +153,8 @@ server <- function(input, output){
     
     # vector to render bar plot
     output$time <- renderPlot({
-                  ggplot(data = data_03_A, aes(x = app, y = count)) +
-                    geom_bar(stat = "Identity", width = 0.5, aes(fill = year)) + 
+                  ggplot(data = data_03_A, aes(x = app, y = count, color = year)) +
+                    geom_bar(stat = "Identity", width = 0.5, fill = "#d4a6c8") + 
                     labs(title = paste0(" \nby ", p$id)) +
                     xlab("Appendix") + 
                     ylab("Number of Species")
