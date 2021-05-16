@@ -73,7 +73,23 @@ ggplot(conservation, aes(x = long, y = lat, group = group,
   scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
 ```
 
-This figure depicts the amount of funding each country is granted and/or devotes to conservation, on a log scale. The countries that receive and utilize the most conservation funding are the same countries that are displayed above as having the greatest biodiversity. This is not surprising, in that it is probably since both of these variables (conservation funding and observed species counts) are a function of the amount to which a country is able to and chooses to prioritize conservation efforts. We know that these countries are not in fact the most biodiverse however, so although it is good that they prioritize conservation within their borders, the fact that conservation in Africa and Central America is underfunded in comparison should be a cause for concern. Additionally, although it appears countries like the United States are doing a great job allocating funding for conservation, this map is relative, so in reality we should be dedicating a lot more funding to preservation of habitats and species. 
+This figure depicts the amount of funding each country is granted and/or devotes to conservation, on a log scale. The countries that receive and utilize the most conservation funding are the same countries that are displayed above as having the greatest biodiversity. This is not surprising, in that it is probably since both of these variables (conservation funding and observed species counts) are a function of the amount to which a country is able to and chooses to prioritize conservation efforts. We know that these countries are not in fact the most biodiverse however, so although it is good that they prioritize conservation within their borders, the fact that conservation in Africa and Central America is underfunded in comparison should be a cause for concern. Additionally, although it appears countries like the United States are doing a great job allocating funding for conservation, this map is relative, so it is not to say we shouldn't be dedicating more funding to the preservation of habitats and species. 
+
+```{r, echo = FALSE}
+ggplot(conservation, aes(x = long, y = lat, group = group, 
+                         fill = log_fpgdp)) +
+  geom_polygon(color = "black") +
+  theme_void() +
+  coord_fixed(ratio = 1.3) +
+  labs(title = "Log(Conservation Funding as a Fraction of total GDP) by Country*"
+       , subtitle = "as of 2013"
+       , fill = ""
+       , caption = "*Regions in white are missing GDP or funding data") +
+  #scale_fill_continuous(low="thistle2", high="darkred",                      guide="colorbar", na.value="white")
+  scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
+```
+
+This figure shows that the disparity between the US, Canada, and other countries around the world is not so large when we factor in GDP. It shows that countries like the Central African Republic are in fact receiving and using funds for conservation that are significant relative to their GDP's. When we look at the funding in this light, conservation in Asian countries seems to be underfunded relative to their GDP's, despite the biodiversity of the continent.
 
 ### Network of Trade between countries
 
@@ -160,7 +176,7 @@ This figure represents a chloropleth map that indicates the total species export
 
 ## United States Data
 
-One takeaway from the maps above is that the United States tend to have the funding and the drive to record large quantities of data about species diversity. Below are some charts that allow us to see the differences between places within the United States.
+One takeaway from the maps above is that the United States has the funding and the drive to record large quantities of data about species diversity. Below are some charts that allow us to see differences in biodiversity between places within the United States.
   
 ### National Parks
 

@@ -5,8 +5,8 @@ account: edaisy21
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4122003
-bundleId: 4591281
+bundleId: 4595465
 url: https://edaisy21.shinyapps.io/blog_app/
-when: 1620845754.61773
+when: 1620933627.79272
 asMultiple: FALSE
 asStatic: FALSE

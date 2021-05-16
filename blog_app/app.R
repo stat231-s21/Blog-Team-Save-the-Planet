@@ -98,8 +98,12 @@ ui <- navbarPage(
     
     sidebarLayout(
       sidebarPanel(
+        radioButtons(inputId = "gdp"
+                     , label = "Display as a fraction of GDP?"
+                     , choices = log_ops
+                     , selected = "No"),
         radioButtons(inputId = "log"
-                     , label = "Take the log of total funding?"
+                     , label = "Take the log?"
                      , choices = log_ops
                      , selected = "No")
       ),
@@ -260,32 +264,60 @@ server <- function(input, output) {
   #TAB 3: Conservation Funding
   #Making a map of Conservation Funding by Country
   output$totalPlot <- renderPlot({
-    #Giving the user the option to do a log transform
-    if(input$log == "Yes"){
-      ggplot(conservation, aes(x = long, y = lat, group = group, 
-                               fill = log_funding)) +
-        geom_polygon(color = "black") +
-        theme_void() +
-        coord_fixed(ratio = 1.3) +
-        labs(title = "Conservation Funding By Country*"
-             , subtitle = "as of 2013"
-             , fill = ""
-             , caption = "*Regions in white have no data") +
-        #scale_fill_continuous(low="thistle2", high="darkred",                      guide="colorbar", na.value="white")
-        scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
+    #Giving the user the option to divide by gdp
+    if(input$gdp == "Yes"){
+      #Giving the user the option to do a log transform
+      if(input$log == "Yes"){
+        ggplot(conservation, aes(x = long, y = lat, group = group, 
+                                 fill = log_fpgdp)) +
+          geom_polygon(color = "black") +
+          theme_void() +
+          coord_fixed(ratio = 1.3) +
+          labs(title = "Log(Conservation Funding By Country as a Fraction of total GDP)*"
+               , subtitle = "as of 2013"
+               , fill = ""
+               , caption = "*Regions in white are missing GDP or funding data") +
+          #scale_fill_continuous(low="thistle2", high="darkred",                      guide="colorbar", na.value="white")
+          scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
+      }
+      else {
+        ggplot(conservation, aes(x = long, y = lat, group = group, 
+                                 fill = funding_per_GDP)) +
+          geom_polygon(color = "black") +
+          theme_void() +
+          coord_fixed(ratio = 1.3) +
+          labs(title = "Conservation Funding By Country as a Fraction of total GDP*"
+               , subtitle = "as of 2013"
+               , fill = ""
+               , caption = "*Regions in white are missing GDP or funding data") +
+          scale_fill_viridis(option = "plasma", direction = -1, na.value="white")
+      }
     }
     else {
-      ggplot(conservation, aes(x = long, y = lat, group = group, 
-                               fill = total)) +
-        geom_polygon(color = "black") +
-        theme_void() +
-        coord_fixed(ratio = 1.3) +
-        labs(title = "Log(Conservation Funding) By Country*"
-             , subtitle = "as of 2013"
-             , fill = ""
-             , caption = "*Regions in white have no data") +
-        #scale_fill_continuous(low="thistle2", high="darkred",                      guide="colorbar", na.value="white")
-        scale_fill_viridis(option = "plasma", direction = -1, na.value="white")
+      if(input$log == "Yes"){
+        ggplot(conservation, aes(x = long, y = lat, group = group, 
+                                 fill = log_funding)) +
+          geom_polygon(color = "black") +
+          theme_void() +
+          coord_fixed(ratio = 1.3) +
+          labs(title = "Log(Conservation Funding) By Country*"
+               , subtitle = "as of 2013"
+               , fill = ""
+               , caption = "*Regions in white have no data") +
+          scale_fill_viridis(option = "viridis", direction = -1, na.value="white")
+      }
+      else {
+        ggplot(conservation, aes(x = long, y = lat, group = group, 
+                                 fill = total)) +
+          geom_polygon(color = "black") +
+          theme_void() +
+          coord_fixed(ratio = 1.3) +
+          labs(title = "Conservation Funding By Country*"
+               , subtitle = "as of 2013, in millions of US dollars"
+               , fill = ""
+               , caption = "*Regions in white have no data") +
+          scale_fill_viridis(option = "plasma", direction = -1, na.value="white")
+      }
     }
   })
   #TAB 3: Conservation Funding - END

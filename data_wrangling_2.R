@@ -13,6 +13,10 @@
 #https://datadryad.org/stash/dataset/doi:10.5061/dryad.p69t1
 #Accessed April 2021
 
+#GDP Information (from 2019):
+#https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+#Accessed May 2021
+
 #Load Libraries
 library(tidyverse)
 library(robotstxt)
@@ -62,11 +66,61 @@ cons_selected <- conservation %>%
                             TRUE ~ as.character(region))) %>%
   mutate(log_funding = log(total)) %>%
   mutate(sqrt_funding = sqrt(total))
+#Joining World Map
 world_map <- map_data(map = "world"
                       , region = ".")
 funding_map <- cons_selected %>%
   right_join(world_map, by = "region")
-write_csv(x = funding_map, file = "./conservation_final.csv")
+#Scraping and Joining GDPs
+url <- "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)"
+table <- (url %>%
+            read_html() %>%
+            html_nodes("table")) [[5]] %>%
+  html_table() %>%
+  janitor::clean_names() %>%
+  rename(region = country_territory) %>%
+  mutate(gdp_us_million = str_remove_all(gdp_us_million, ",")) %>%
+  mutate(gdp = as.numeric(gdp_us_million)) %>%
+  mutate(region = case_when(region == "United States" ~ "USA", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Congo, Republic of the" ~ "Republic of Congo", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Congo, Democratic Republic of the"
+                            ~ "Democratic Republic of the Congo", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "China[n 9]" ~ "China", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Cuba (2018)" ~ "Cuba", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Cyprus[n 12]" ~ "Cyprus", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Gambia, The" ~ "Gambia", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Georgia[n 13]" ~ "Georgia", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Iran (2017)" ~ "Iran", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Moldova[n 8]" ~ "Moldova", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Morocco[n 10]" ~ "Morocco", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Taiwan (2017)" ~ "Taiwan", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Tanzania[n 11]" ~ "Tanzania", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Turkmenistan (2018)" ~ "Turkmenistan", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Congo" ~ "Republic of Congo", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "Ukraine [n 5]" ~ "Ukraine", 
+                            TRUE ~ as.character(region))) %>%
+  mutate(region = case_when(region == "United Kingdom" ~ "UK", 
+                            TRUE ~ as.character(region))) 
+funding_map_final <- funding_map %>%
+  left_join(table, by = "region") %>%
+  mutate(funding_per_GDP = total/gdp) %>%
+  mutate(log_fpgdp = log(funding_per_GDP))
+write_csv(x = funding_map_final, file = "./conservation_final.csv")
 
 ####### Count of Species exported by each country #########
 exp_country <- data %>%
