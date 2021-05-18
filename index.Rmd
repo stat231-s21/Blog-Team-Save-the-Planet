@@ -25,7 +25,15 @@ library(xtable)
 library(kableExtra)
 ```
 
-testing intro
+## Introduction
+Over the past 40 years, vertebrate population sizes measured by the World Wildlife Fund have more than halved, mostly due to overhunting and habitat destruction from urban development, and research out of the University of Arizona suggests that one in three species are likely to be extinct by the end of the century (article [here](https://www.cnn.com/2020/02/21/weather/species-extinction-climate-trnd/index.html)), in large part due to human activities. Our motivation for this blog post is to analyze global species biodiversity distribution and our impact on the loss and preservation of said biodiversity. Maintaining natural ecosystem biodiversity is crucial to sustaining human life on this planet because functioning ecological systems provide clean air and water, as well as pollination of agriculture crops. Without the natural species present, the delicate balance of these systems is destroyed, and with it, our planet and us.
+
+The first section of this blog post is dedicated to analyzing current global vertebrate species diversity using data from the World Wildlife Fund Living Planet Index (see below for all sources). By analyzing the countries based on the number of species that fall in IUCN threat categories (such as critically endangered, least concern, etc.), we gain an understanding of where we should be directing conservation funding and efforts because it is the ecosystems in these areas that are most in need of saving and are the most susceptible to loss. Here we note that this information is not the most comprehensive since the data is solely focused on vertebrate species, while most of the world’s overall biodiversity includes invertebrate species. We also compare the distribution of species to the global distribution of conservation funding using data from published data on tracking conservation funding on the Dryad website. By comparing the two maps, we can determine which countries need more funding directed towards conservation and which countries already dedicate significant amounts of money towards conservation efforts.
+
+Next, we attempt to quantify an aspect of our impact on biodiversity, which takes the form of international animal trade. Using data from the Convention on International Trade in Endangered Species of Wild Fauna and Flora, or CITES for short, we analyze the legal trade of animals and animal products globally to determine which countries were playing the largest role in the depletion of animal species. Unfortunately, we were limited to legal trade, so it is important to note that much of species loss, especially of endangered species, comes from illegal trade. 
+
+We finally shift our focus to the US and look at both species diversity in national parks throughout the country and at major cities in the East using data from the National Parks Service and a published paper, respectively. The trends in major city species diversity illustrate the impact of urbanization on the introduction of non-native and loss of native species.
+
 ## World Maps
 
 For interactive versions of these maps, click [here](https://edaisy21.shinyapps.io/blog_app/)
@@ -217,3 +225,20 @@ ggplot(cities, aes(x = City, y = Species)) +
 
 It makes sense that more species have been introduced to the four coastal cities than to the four inland cities, considering how many invasive species are transported (intentionally or not) by boats. For future studies, it would be worthwhile to continue these comparisons across more Midwest cities as well as cities along the West coast.
 
+## Conclusion
+The largest problem we encountered was finding data for the questions we wanted to address. There was no readily available access to species diversity of invertebrates, most likely because of the sheer number of these species. However, future work can be done to record this data and reconstruct our global distribution for a more accurate understanding of global biodiversity. Additionally, we could not find published data on illegal animal trade, and it is difficult to imagine this data even exists, which limits our analysis of human trade impact on species. 
+
+Furthermore, to address some of the questions asked in class, while we did not account for GDP of the country in plotting available diversity data, this is a great way to expand on our current work because taking GDP into consideration can better standardize the number of species by accounting for resources a country can dedicate to record species diversity. Hence, we more accurately see if the US, for example, actually has significantly more species, or that it has more resources to properly track the number of species. 
+
+## Data Sources
+* WWF biodiversity (downloadable [csv](https://www.dropbox.com/s/t48dd7m0o088w69/LPI_pops_restricted_20160421.csv?dl=0))
+
+* CITES trade (downloadable [csv](https://www.kaggle.com/cites/cites-wildlife-trade-database)) 
+
+
+* Conservation funding (downloadable [csv](https://datadryad.org/stash/dataset/doi:10.5061/dryad.p69t1)
+
+
+* National Parks (downloadable [csv](https://www.kaggle.com/gsdeepakkumar/biodiversity-an-eda/data?select=species.csvgbif.org%2Fdataset%2F67c54f85-7910-4cbf-8de4-6f0b136a0e34)) 
+
+* Urban species (downloadable [excel](http://www.urbanhabitats.org/v01n01/speciesdiversity_full.html))
