@@ -25,8 +25,7 @@ library(xtable)
 library(kableExtra)
 ```
 
-Research out of the University of Arizona suggests that one in three species are likely to be extinct by the end of the century (article [here](https://www.cnn.com/2020/02/21/weather/species-extinction-climate-trnd/index.html)), in large part due to human activities. Conservation efforts are underway across the globe, but what we are currently doing is not enough. The goal of this blog post is to illustrate where the greatest biodiversity in the world exists, where conservation funding is being concentrated, and where animal trade is occurring, in an attempt to reveal where we are centering our conservation efforts and where we perhaps should be. In the process, we encounter current problems with species data collection and consider possible solutions.
-
+testing intro
 ## World Maps
 
 For interactive versions of these maps, click [here](https://edaisy21.shinyapps.io/blog_app/)
