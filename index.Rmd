@@ -119,6 +119,7 @@ This figure shows that the disparity between the US, Canada, and other countries
       labs(color = "Total Occurrence") +
       scale_color_continuous(type = "viridis")
 ```
+
 This figure depicts the trade of species between countries (both imported and exported) and the count of species traded between two countries as a network plot.  The color of the edges between the countries indicate the frequency, as trade between countries numerous, the trade occurrence of over 200 species between the countries is represented.  
 
 ### Count of Species exported by the countries
