@@ -236,7 +236,7 @@ Furthermore, to address some of the questions asked in class, while we did not a
 * CITES trade (downloadable [csv](https://www.kaggle.com/cites/cites-wildlife-trade-database)) 
 
 
-* Conservation funding (downloadable [csv](https://datadryad.org/stash/dataset/doi:10.5061/dryad.p69t1)
+* Conservation funding (downloadable [csv](https://datadryad.org/stash/dataset/doi:10.5061/dryad.p69t1))
 
 
 * National Parks (downloadable [csv](https://www.kaggle.com/gsdeepakkumar/biodiversity-an-eda/data?select=species.csvgbif.org%2Fdataset%2F67c54f85-7910-4cbf-8de4-6f0b136a0e34)) 
